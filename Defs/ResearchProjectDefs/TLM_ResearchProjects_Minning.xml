@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResearchProjectDefs>
+    
+    <!-- base technic line BALANCE REQ !!!! -->
+    <!-- Front res -->
+    
+    <ResearchProjectDef>
+		<defName>Minning</defName>
+		<label>Minning discovery</label>
+		<description>Basic understanding of Minning</description>
+		<totalCost>75</totalCost>
+		<prerequisites></prerequisites>
+	</ResearchProjectDef>
+	
+	<!-- multi lead reserches -->
+	
+    <ResearchProjectDef>
+		<defName>Prospecting_I</defName>
+		<label>Prospecting I</label>
+		<description>Prospecting I</description>
+		<totalCost>750</totalCost>
+		<prerequisites><li>Minning</li></prerequisites>
+    </ResearchProjectDef>
+    
+    <ResearchProjectDef>
+		<defName>Prospecting_II</defName>
+		<label>Prospecting II</label>
+		<description>Prospecting II</description>
+		<totalCost>1500</totalCost>
+		<prerequisites><li>Prospecting_I</li></prerequisites>
+    </ResearchProjectDef>
+    
+    <ResearchProjectDef>
+		<defName>Surveing_I</defName>
+		<label>Surveing I</label>
+		<description>Surveing I</description>
+		<totalCost>600</totalCost>
+		<prerequisites>
+		    <li>Minning</li>
+		</prerequisites>
+    </ResearchProjectDef>
+    
+	
+    
+<!-- sample 
+	<ResearchProjectDef>
+		<defName>GunTurretCooling</defName>
+		<label>gun turret cooling</label>
+		<description>Gun turrets fire four shots in a burst instead of three.</description>
+		<totalCost>1000</totalCost>
+		<prerequisites><li>TLM_null</li></prerequisites>
+    <researchMods>
+      <li>
+        <specialAction>ResearchModsSpecial.GunTurretCooling</specialAction>
+      </li>
+    </researchMods>
+	</ResearchProjectDef>
+-->
+
+  
+</ResearchProjectDefs>
